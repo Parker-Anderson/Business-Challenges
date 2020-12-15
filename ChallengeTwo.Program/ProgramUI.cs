@@ -12,14 +12,11 @@ namespace ChallengeTwo.Program
         private ClaimRepo _claimRepo = new Repo.ClaimRepo();
         private Claim _claim = new Claim();
         private Queue<Claim> _claims = new Queue<Claim>();
-
-
         public void Run()
         {
             SeedQueue();
             ClaimMenu();
         }
-
         private void ClaimMenu()
         {
             bool keepRunning = true;
@@ -30,7 +27,6 @@ namespace ChallengeTwo.Program
                     "2. Next claim.\n" +
                     "3. Enter a new claim.\n" +
                     "4. Exit.");
-
                 string choice = Console.ReadLine();
                 switch (choice)
                 {
@@ -58,14 +54,11 @@ namespace ChallengeTwo.Program
                     default:
                         Console.WriteLine("Please enter a valid selection.");
                         break;
-
-
                 }
                 Console.Clear();
             }
         }
-
-        private void SeeAllClaims()
+            private void SeeAllClaims()
         {
             Console.Clear();
             foreach (Claim claim in _claims)
@@ -78,14 +71,10 @@ namespace ChallengeTwo.Program
                     $"Date of Claim: {claim.DateOfClaim}\n" +
                     $"IsValid: {claim.IsValid}");
             }
-
-        }
-
-
-        private void WorkNextClaim()
+         }
+            private void WorkNextClaim()
         {
             Claim nextClaim = _claims.Peek();
-
             Console.Clear();
             Console.WriteLine($"Claim ID: {nextClaim.ClaimID}\n" +
                     $"Claim Type: {nextClaim.ClaimType}\n" +
@@ -108,21 +97,14 @@ namespace ChallengeTwo.Program
                     {
                         break;
                     }
-
-
-
             }
-
-
-        }
-
-        private void CreateClaim()
-        {
+    }
+            private void CreateClaim()
+            {
             Console.Clear();
             var newClaim = new Claim();
             Console.WriteLine("Enter the Claim ID:");
             int id = int.Parse(Console.ReadLine());
-
             id = newClaim.ClaimID;
             Console.WriteLine("Enter the Claim Type:(Car/Home/Theft)");
             string type = Console.ReadLine();
@@ -150,15 +132,10 @@ namespace ChallengeTwo.Program
             {
                 newClaim.IsValid = true;
             }
-
             _claims.Enqueue(newClaim);
-
-
-
-        }
-
-        private void SeedQueue()
-        {
+            }
+            private void SeedQueue()
+            {
             Claim claim1 = new Claim(1, Claim.claimType.Car, "Car Accident on 465", 378.00m, DateTime.Parse("04/25/2018"), DateTime.Parse("04/27/2018"), true);
             Claim claim2 = new Claim(2, Claim.claimType.Home, "House Fire in Kitchen", 23344.12m, DateTime.Parse("04/11/2018"), DateTime.Parse("04/12/2018"), true);
             Claim claim3 = new Claim(3, Claim.claimType.Theft, "Stolen Pancakes", 4.00m, DateTime.Parse("04/27/2018"), DateTime.Parse("06/01/2018"), false);
@@ -167,6 +144,6 @@ namespace ChallengeTwo.Program
             _claims.Enqueue(claim1);
             _claims.Enqueue(claim2);
             _claims.Enqueue(claim3);
-        }
+            }
     }
 }

@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChallengeOne", "ChallengeOn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeOne.Repo", "ChallengeOne.Repo\ChallengeOne.Repo.csproj", "{886E332F-DCD9-405A-AEC3-FE60857348B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program", "Program\Program.csproj", "{DE0D130A-EC87-477A-9C0B-5637785F01CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeOne.Program", "Program\ChallengeOne.Program.csproj", "{DE0D130A-EC87-477A-9C0B-5637785F01CE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChallengeTwo", "ChallengeTwo", "{8B352D95-B00F-4471-BD2C-CC0F8AE04AA2}"
 EndProject
