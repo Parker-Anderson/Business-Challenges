@@ -1,2 +1,10 @@
 C:\Users\parke\source\repos\GoldBadgeChallenges\ChallengeTwo.Program\obj\Debug\ChallengeTwo.Program.csprojAssemblyReference.cache
 C:\Users\parke\source\repos\GoldBadgeChallenges\ChallengeTwo.Program\obj\Debug\ChallengeTwo.Program.csproj.CoreCompileInputs.cache
+C:\Users\parke\source\repos\GoldBadgeChallenges\ChallengeTwo.Program\bin\Debug\ChallengeTwo.Program.exe.config
+C:\Users\parke\source\repos\GoldBadgeChallenges\ChallengeTwo.Program\bin\Debug\ChallengeTwo.Program.exe
+C:\Users\parke\source\repos\GoldBadgeChallenges\ChallengeTwo.Program\bin\Debug\ChallengeTwo.Program.pdb
+C:\Users\parke\source\repos\GoldBadgeChallenges\ChallengeTwo.Program\bin\Debug\ChallengeTwo.Repo.dll
+C:\Users\parke\source\repos\GoldBadgeChallenges\ChallengeTwo.Program\bin\Debug\ChallengeTwo.Repo.pdb
+C:\Users\parke\source\repos\GoldBadgeChallenges\ChallengeTwo.Program\obj\Debug\ChallengeTwo.Program.csproj.CopyComplete
+C:\Users\parke\source\repos\GoldBadgeChallenges\ChallengeTwo.Program\obj\Debug\ChallengeTwo.Program.exe
+C:\Users\parke\source\repos\GoldBadgeChallenges\ChallengeTwo.Program\obj\Debug\ChallengeTwo.Program.pdb
