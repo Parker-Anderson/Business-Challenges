@@ -1,0 +1,2 @@
+C:\Users\parke\source\repos\GoldBadgeChallenges\ChallengeTwo.Program\obj\Debug\ChallengeTwo.Program.csprojAssemblyReference.cache
+C:\Users\parke\source\repos\GoldBadgeChallenges\ChallengeTwo.Program\obj\Debug\ChallengeTwo.Program.csproj.CoreCompileInputs.cache
