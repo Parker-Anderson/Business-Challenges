@@ -64,7 +64,7 @@ namespace ChallengeTwo.Program
             foreach (Claim claim in _claims)
             {
                 Console.WriteLine($"Claim ID: {claim.ClaimID}\n" +
-                    $"Claim Type: {claim.ClaimType}\n" +
+                    $"Claim Type: {(int)claim.ClaimType}\n" +
                     $"Description: {claim.Description}\n" +
                     $"Amount: {claim.ClaimAmount}\n" +
                     $"Date of Incident: {claim.DateOfIncident}\n" +
@@ -104,10 +104,11 @@ namespace ChallengeTwo.Program
             Console.Clear();
             var newClaim = new Claim();
             Console.WriteLine("Enter the Claim ID:");
-            int id = int.Parse(Console.ReadLine());
-            id = newClaim.ClaimID;
-            Console.WriteLine("Enter the Claim Type:(Car/Home/Theft)");
-            string type = Console.ReadLine();
+            int id = Convert.ToInt32(Console.ReadLine());
+            newClaim.ClaimID = id;
+            Console.WriteLine("Enter the Claim Type:(1 for Car, 2 for Home, 3 for Theft)");
+            int type = Convert.ToInt32(Console.ReadLine());
+            newClaim.ClaimType = (ClaimType)type;
             Console.WriteLine("Enter a description of the accident:");
             string description = Console.ReadLine();
             newClaim.Description = description;
@@ -136,9 +137,9 @@ namespace ChallengeTwo.Program
             }
             private void SeedQueue()
             {
-            Claim claim1 = new Claim(1, Claim.claimType.Car, "Car Accident on 465", 378.00m, DateTime.Parse("04/25/2018"), DateTime.Parse("04/27/2018"), true);
-            Claim claim2 = new Claim(2, Claim.claimType.Home, "House Fire in Kitchen", 23344.12m, DateTime.Parse("04/11/2018"), DateTime.Parse("04/12/2018"), true);
-            Claim claim3 = new Claim(3, Claim.claimType.Theft, "Stolen Pancakes", 4.00m, DateTime.Parse("04/27/2018"), DateTime.Parse("06/01/2018"), false);
+            Claim claim1 = new Claim(1, ClaimType.Car, "Car Accident on 465", 378.00m, DateTime.Parse("04/25/2018"), DateTime.Parse("04/27/2018"), true);
+            Claim claim2 = new Claim(2, ClaimType.Home, "House Fire in Kitchen", 23344.12m, DateTime.Parse("04/11/2018"), DateTime.Parse("04/12/2018"), true);
+            Claim claim3 = new Claim(3, ClaimType.Theft, "Stolen Pancakes", 4.00m, DateTime.Parse("04/27/2018"), DateTime.Parse("06/01/2018"), false);
             _claimRepo.CreateClaim(claim1);
             _claimRepo.CreateClaim(claim2);
             _claims.Enqueue(claim1);

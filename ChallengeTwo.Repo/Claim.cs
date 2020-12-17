@@ -6,23 +6,24 @@ using System.Threading.Tasks;
 
 namespace ChallengeTwo.Repo
 {
+    public enum ClaimType
+    {
+        Car = 1,
+        Home = 2,
+        Theft = 3
+    }
     public class Claim
     {
-        public enum claimType
-        {
-            Car = 1,
-            Home = 2,
-            Theft = 3
-        }
+        
         public int ClaimID { get; set; }
-        public claimType ClaimType { get; set; }
+        public ClaimType ClaimType { get; set; }
         public string Description { get; set; }
         public decimal ClaimAmount { get; set; }
         public DateTime DateOfIncident { get; set; }
         public DateTime DateOfClaim { get; set; }
         public bool IsValid { get; set; }
         public Claim() { }
-        public Claim(int claimid, claimType claimtype, string description, decimal claimamount, DateTime dateofincident, DateTime dateofclaim, bool isvalid)
+        public Claim(int claimid, ClaimType claimtype, string description, decimal claimamount, DateTime dateofincident, DateTime dateofclaim, bool isvalid)
         {
             ClaimID = claimid;
             ClaimType = claimtype;
