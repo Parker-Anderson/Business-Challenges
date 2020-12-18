@@ -9,25 +9,42 @@ namespace ChallengeThree.Repo
     public class BadgeRepo
     {
         public Badge _badge = new Badge();
-        public Dictionary<int, Badge> badgedict = new Dictionary<int, Badge>();
+        public Dictionary<int, List<string>> badgedict = new Dictionary<int, List<string>>();
 
         public void CreateNewBadge(int badgeid, Badge value)
         {
             var newBadgeID = new int();
-            var newBadge = new Badge();
-            badgedict.Add(newBadgeID, newBadge);
+            var newdoorlist = new List<string>();
+            badgedict.Add(newBadgeID, newdoorlist);
         }
 
-        public Dictionary<int, Badge> DisplayAllPairs()
+        public Dictionary<int, List<string>> DisplayAllPairs()
         {
             return badgedict;
         }
         public List<string> doornames = new List<string>();
-        public void AddDoorsToNewBadge()
+        public void AddDoorsToBadge()
         {
           _badge.DoorNames.AddRange(doornames);
         }
 
-  
+        public void DeleteDoorsFromBadge()
+        {
+            Badge badgetoRemove = new Badge();
+            var doorsremove = new List<string>();
+        }
+        public Badge GetBadgeByID(int badgeid)
+        {
+            int id = new int();
+            if (id == _badge.BadgeID)
+            {
+                return _badge;
+            }
+
+            else
+            {
+                return null;
+            }
+        }
     }
 }

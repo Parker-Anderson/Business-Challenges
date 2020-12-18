@@ -9,6 +9,7 @@ namespace ChallengeThree.Program
 {
     class ProgramUI
     {
+        public Badge _badge = new Badge();
         public BadgeRepo _badgeRepo = new BadgeRepo();
         public void Run()
         {
@@ -16,6 +17,7 @@ namespace ChallengeThree.Program
         }
         private void BadgeMenu()
         {
+            var doornames = new List<string>();
             Console.WriteLine("Security Administrator: Choose a menu option:\n" +
                 "1. Create a new badge.\n" +
                 "2. Update doors on an existing badge.\n" +
@@ -27,28 +29,34 @@ namespace ChallengeThree.Program
             {
                 case "1":
                     {
-                        CreateBadge();
+                        CreateNewBadge();
                         break;
                     }
                 case "2":
                     {
+                        
+                        AddDoorsToBadge(doornames);
                         break;
                     }
                 case "3":
                     {
+                        DeleteDoorsFromBadge();
                         break;
                     }
                 case "4":
                     {
+                        DisplayAllBadges();
                         break;
                     }
                 case "5":
                     {
+                        Console.WriteLine("Goodbye. Please press any key to continue...");
+                        Console.ReadLine();
                         break;
                     }
             }
         }
-        private void CreateBadge()
+        private void CreateNewBadge()
         {
             Console.WriteLine("What is the badge number?");
             string numstring = Console.ReadLine();
@@ -67,8 +75,8 @@ namespace ChallengeThree.Program
                     {
                         Console.WriteLine("List a door this badge needs access to:");
                         string doorname2 = Console.ReadLine();
-                        doorname2 = _badgeRepo.AddDoorsToNewBadge();
-                
+                        doornames.Add(doorname2);
+                        AddDoorsToBadge(doornames);
                         break;
                     }
                 case "n":
@@ -83,5 +91,23 @@ namespace ChallengeThree.Program
             }
 
         }
+        private void AddDoorsToBadge(List<string> doornames)
+        {
+
+        }
+        private void DeleteDoorsFromBadge()
+        {
+            
+            int badgeid = new Int32();
+            Badge badge = _badgeRepo.GetBadgeByID(badgeid);
+            var doorarray = badge.DoorNames.ToArray();
+            string door = doorarray.First();
+            badge.DoorNames.Remove(door);
+        }
+        private void DisplayAllBadges()
+        {
+
+        }
+
     }
 }
