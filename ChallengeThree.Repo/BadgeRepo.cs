@@ -18,7 +18,7 @@ namespace ChallengeThree.Repo
             badgedict.Add(newBadgeID, newdoorlist);
         }
 
-        public Dictionary<int, List<string>> DisplayAllPairs()
+        public Dictionary<int, List<string>> DisplayAllBadges()
         {
             return badgedict;
         }

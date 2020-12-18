@@ -93,7 +93,10 @@ namespace ChallengeThree.Program
         }
         private void AddDoorsToBadge(List<string> doornames)
         {
-
+            int badgeid = new Int32();
+            Badge badge = _badgeRepo.GetBadgeByID(badgeid);
+            string doorname = Console.ReadLine();
+            badge.DoorNames.Add(doorname);
         }
         private void DeleteDoorsFromBadge()
         {
@@ -106,7 +109,8 @@ namespace ChallengeThree.Program
         }
         private void DisplayAllBadges()
         {
-
+            DisplayAllBadges();
+            Console.ReadLine();
         }
 
     }
