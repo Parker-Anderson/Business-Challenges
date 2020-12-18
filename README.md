@@ -9,7 +9,7 @@ A group of C# .NET Framework Console Applications developed for Eleven Fifty Aca
 4. Contributions
 
 ## Introduction
-This group of C# Console App challenges serves as part of the curriculum for Software Development Gold Badge at Eleven Fifty Academy.  The challenges are centered around a fictional business scenario Each challenge introduces a new or additional item of learning within C#.  
+This group of C# Console App challenges serves as part of the curriculum for Software Development Gold Badge at Eleven Fifty Academy.  The challenges are each centered around a fictional business scenario. Each sequential challenge introduces a new or additional item of learning within C#, and sometimes adds a degree of complexity.  
 
 ## Technologies 
 These projects were developed with .NET Framework C#, and were designed utilizing the Repository Pattern paradigm. All code was created within Microsoft Visual Studio Community 2019.
