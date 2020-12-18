@@ -16,7 +16,7 @@ namespace ChallengeTwo.Repo
         }
         public void WorkNextClaim()
         {
-            _claims.Peek();
+            _claims.Dequeue();
         }
         public void CreateClaim(Claim claim1)
         {

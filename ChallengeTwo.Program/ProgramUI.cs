@@ -91,6 +91,7 @@ namespace ChallengeTwo.Program
                 case "y":
                     {
                         _claims.Dequeue();
+                        //_claimRepo.WorkNextClaim();
                         break;
                     }
                 case "n":
