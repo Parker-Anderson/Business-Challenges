@@ -35,7 +35,7 @@ namespace ChallengeOne.Repo
                 return false;
             }
         }
-        private Menu.Item GetMealByNumber(int mealnumber)
+        public Menu.Item GetMealByNumber(int mealnumber)
         {
             foreach (Menu.Item item in _listofItems)
             {

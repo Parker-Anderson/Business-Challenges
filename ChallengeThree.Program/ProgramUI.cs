@@ -16,7 +16,7 @@ namespace ChallengeThree.Program
         }
         private void BadgeMenu()
         {
-            Console.WriteLine("Choose a menu option:\n" +
+            Console.WriteLine("Security Administrator: Choose a menu option:\n" +
                 "1. Create a new badge.\n" +
                 "2. Update doors on an existing badge.\n" +
                 "3. Delete all doors from an existing badge.\n" +
@@ -54,10 +54,10 @@ namespace ChallengeThree.Program
             string numstring = Console.ReadLine();
             int badgenum = Convert.ToInt32(numstring);
             Console.WriteLine("List a door this badge needs access to:");
-            string doorname = Console.ReadLine();
-            _badgeRepo._badge.BadgeID = badgenum;
-            _badgeRepo.badgePairs.Add(badgenum, _badgeRepo._badge.DoorNames);
-            _badgeRepo._badge.DoorNames.Add(doorname);
+            var doornames = new List<string>();
+            var doornamestring = Console.ReadLine();
+            doornames.Add(doornamestring);
+
             Console.WriteLine("Any other doors? y/n");
             string choice = Console.ReadLine();
             string lochoice = choice.ToLower();
@@ -67,9 +67,8 @@ namespace ChallengeThree.Program
                     {
                         Console.WriteLine("List a door this badge needs access to:");
                         string doorname2 = Console.ReadLine();
-                        _badgeRepo._badge.BadgeID = badgenum;
-                        _badgeRepo.badgePairs.Add(badgenum, _badgeRepo._badge.DoorNames);
-                        _badgeRepo._badge.DoorNames.Add(doorname2);
+                        doorname2 = _badgeRepo.AddDoorsToNewBadge();
+                
                         break;
                     }
                 case "n":
@@ -82,6 +81,7 @@ namespace ChallengeThree.Program
                         break;
                     }
             }
+
         }
     }
 }

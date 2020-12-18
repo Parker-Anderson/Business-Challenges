@@ -1,0 +1,10 @@
+C:\Users\parke\source\repos\GoldBadgeChallenges\Program\bin\Debug\Program.exe.config
+C:\Users\parke\source\repos\GoldBadgeChallenges\Program\bin\Debug\Program.exe
+C:\Users\parke\source\repos\GoldBadgeChallenges\Program\bin\Debug\Program.pdb
+C:\Users\parke\source\repos\GoldBadgeChallenges\Program\bin\Debug\ChallengeOne.Repo.dll
+C:\Users\parke\source\repos\GoldBadgeChallenges\Program\bin\Debug\ChallengeOne.Repo.pdb
+C:\Users\parke\source\repos\GoldBadgeChallenges\Program\obj\Debug\ChallengeOne.Program.csprojAssemblyReference.cache
+C:\Users\parke\source\repos\GoldBadgeChallenges\Program\obj\Debug\ChallengeOne.Program.csproj.CoreCompileInputs.cache
+C:\Users\parke\source\repos\GoldBadgeChallenges\Program\obj\Debug\ChallengeOne.Program.csproj.CopyComplete
+C:\Users\parke\source\repos\GoldBadgeChallenges\Program\obj\Debug\Program.exe
+C:\Users\parke\source\repos\GoldBadgeChallenges\Program\obj\Debug\Program.pdb
