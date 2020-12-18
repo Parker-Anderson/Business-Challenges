@@ -12,3 +12,5 @@ C:\Users\parke\source\repos\GoldBadgeChallenges\ChallengeTwo.Tests\obj\Debug\Cha
 C:\Users\parke\source\repos\GoldBadgeChallenges\ChallengeTwo.Tests\obj\Debug\ChallengeTwo.Tests.csproj.CopyComplete
 C:\Users\parke\source\repos\GoldBadgeChallenges\ChallengeTwo.Tests\obj\Debug\ChallengeTwo.Tests.dll
 C:\Users\parke\source\repos\GoldBadgeChallenges\ChallengeTwo.Tests\obj\Debug\ChallengeTwo.Tests.pdb
+C:\Users\parke\source\repos\GoldBadgeChallenges\ChallengeTwo.Tests\bin\Debug\ChallengeTwo.Repo.dll
+C:\Users\parke\source\repos\GoldBadgeChallenges\ChallengeTwo.Tests\bin\Debug\ChallengeTwo.Repo.pdb
