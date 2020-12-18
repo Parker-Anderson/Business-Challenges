@@ -65,7 +65,6 @@ namespace ChallengeThree.Program
             var doornames = new List<string>();
             var doornamestring = Console.ReadLine();
             doornames.Add(doornamestring);
-
             Console.WriteLine("Any other doors? y/n");
             string choice = Console.ReadLine();
             string lochoice = choice.ToLower();
@@ -73,10 +72,7 @@ namespace ChallengeThree.Program
             {
                 case "y":
                     {
-                        Console.WriteLine("List a door this badge needs access to:");
-                        string doorname2 = Console.ReadLine();
-                        doornames.Add(doorname2);
-                        AddDoorsToBadge(doornames);
+                        CreateNewBadge();
                         break;
                     }
                 case "n":
@@ -96,7 +92,7 @@ namespace ChallengeThree.Program
             int badgeid = new Int32();
             Badge badge = _badgeRepo.GetBadgeByID(badgeid);
             string doorname = Console.ReadLine();
-            badge.DoorNames.Add(doorname);
+            _badge.DoorNames.Add(doorname);
         }
         private void DeleteDoorsFromBadge()
         {
