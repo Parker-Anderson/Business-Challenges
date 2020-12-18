@@ -11,11 +11,11 @@ namespace ChallengeThree.Repo
         public Badge _badge = new Badge();
         public Dictionary<int, List<string>> badgedict = new Dictionary<int, List<string>>();
 
-        public void CreateNewBadge(int badgeid, Badge value)
+        public void CreateNewBadge(int badgeid, List<string> value)
         {
             var newBadgeID = new int();
             var newdoorlist = new List<string>();
-            badgedict.Add(newBadgeID, newdoorlist);
+            //badgedict.Add(newBadgeID, newdoorlist);
         }
         public Dictionary<int, List<string>> DisplayAllBadges()
         {
